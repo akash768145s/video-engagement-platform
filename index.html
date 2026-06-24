@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ICICI MultiCard Onboarding - Tutorial Chapters & Vouchers</title>
+    
+    <!-- Preconnect to Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Load Mulish Font family -->
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+    
+    <!-- Custom Style Sheet -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- TASK 1: Exclusive Privileges Section -->
+    <section class="exclusive" id="exclusive">
+        <div class="container p-0 p-md-3">
+            <h2>Exclusive Privileges</h2>
+            <div class="swiper-container-wrapper">
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <!-- Slide 1 -->
+                        <div class="swiper-slide">
+                            <div class="slide slide1">
+                                <p>Get</p>
+                                <h3>Activation voucher</h3>
+                                <p>with <br>Flat ₹1,200/- off.</p>
+                                <img src="assets/images/ixigo.webp" alt="logo ixigo" width="138" height="64" loading="lazy" />
+                            </div>
+                        </div>
+                        <!-- Slide 2 -->
+                        <div class="swiper-slide">
+                            <div class="slide slide2">
+                                <p>Get</p>
+                                <h3>Activation voucher</h3>
+                                <p>with up to<br> ₹1,500/- off*.</p>
+                                <img src="assets/images/reliance_digital.webp" alt="Reliance Digital logo" width="236" height="103" loading="lazy" />
+                            </div>
+                        </div>
+                        <!-- Slide 3 -->
+                        <div class="swiper-slide">
+                            <div class="slide slide3">
+                                <h3>Enjoy Benefits</h3>
+                                <p> worth up to <br>₹500/- off* <br>on your tickets.</p>
+                                <img src="assets/images/bms.webp" alt="BookMyShow logo" width="226" height="67" loading="lazy" />
+                                <em>*available on selected cards</em>
+                            </div>
+                        </div>
+                        <!-- Slide 4 -->
+                        <div class="swiper-slide">
+                            <div class="slide slide4">
+                                <p>Avail</p>
+                                <h3>APPLE OFFER</h3>
+                                <p>with up to<br> ₹7,000/- off</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Navigation controls -->
+                <div class="swiper-button-prev" role="button" aria-label="Previous slide" tabindex="0"></div>
+                <div class="swiper-button-next" role="button" aria-label="Next slide" tabindex="0"></div>
+                <!-- Pagination dots -->
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TASK 2: Video Chapters Redesign (Premium SaaS Split-Screen) -->
+    <section class="video-chapters-section" id="video-chapters-section">
+        <div class="container">
+            <div class="saas-header-group">
+                <span class="badge-label">Interactive Onboarding</span>
+                <h2>Video Chapters Guide</h2>
+                <p class="section-subtitle">Learn the onboarding steps sequentially. Hop instantly to key tutorial segments using our responsive playhead chapters panel.</p>
+            </div>
+
+            <!-- Premium Split-Screen Dashboard Layout -->
+            <div class="split-screen-dashboard">
+                <!-- Left: Large Featured Player (65%) -->
+                <div class="featured-player-card">
+                    <div class="player-aspect-box">
+                        <div id="video-player-frame"></div>
+                    </div>
+                    <!-- Floating controls info layer -->
+                    <div class="floating-media-info">
+                        <div class="media-tags">
+                            <span id="player-category" class="media-tag-badge">Tutorial</span>
+                            <span id="player-status" class="status-tag idle">Idle</span>
+                        </div>
+                        <h3 id="player-title" class="media-playing-title">Loading tutorial...</h3>
+                        <div class="media-duration-badge">
+                            <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="12" cy="12" r="10"/>
+                                <path d="M12 6v6l4 2"/>
+                            </svg>
+                            <span id="player-duration">08:00</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right: Spotify-style interactive chapters timeline (35%) -->
+                <div class="chapters-timeline-card" id="chapters-panel">
+                    <!-- Chapters rendered dynamically via chapters.js -->
+                </div>
+            </div>
+
+            <!-- Carousel Subtitle -->
+            <div class="saas-header-group" style="margin-top: 60px; margin-bottom: 25px;">
+                <h3 class="carousel-section-heading">Browse Onboarding Modules</h3>
+            </div>
+
+            <!-- Premium Horizontal Video Carousel -->
+            <div class="premium-carousel-container">
+                <button class="carousel-control-arrow thumb-prev" aria-label="Previous video">
+                    <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.5">
+                        <path d="M15 18l-6-6 6-6"/>
+                    </svg>
+                </button>
+                
+                <div class="video-thumbnails-carousel">
+                    <!-- Thumbnail 1 -->
+                    <div class="thumbnail-card active" data-video-id="RJTCAL1DRro" tabindex="0" role="button" aria-selected="true">
+                        <div class="thumb-img-wrapper">
+                            <img src="https://img.youtube.com/vi/RJTCAL1DRro/0.jpg" alt="Video Card 1" loading="lazy">
+                            <span class="play-badge">
+                                <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor">
+                                    <path d="M8 5v14l11-7z"/>
+                                </svg>
+                            </span>
+                            <span class="card-duration-tag">8:00</span>
+                        </div>
+                        <div class="thumb-details">
+                            <span class="details-category">Module 01</span>
+                            <h4>Card Onboarding Overview</h4>
+                            <p>Introduction to card activation guidelines, Ixigo activation vouchers, and onboarding procedures.</p>
+                        </div>
+                        <div class="glow-effect"></div>
+                    </div>
+                    <!-- Thumbnail 2 -->
+                    <div class="thumbnail-card" data-video-id="jj_aUFX8SV8" tabindex="0" role="button" aria-selected="false">
+                        <div class="thumb-img-wrapper">
+                            <img src="https://img.youtube.com/vi/jj_aUFX8SV8/0.jpg" alt="Video Card 2" loading="lazy">
+                            <span class="play-badge">
+                                <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor">
+                                    <path d="M8 5v14l11-7z"/>
+                                </svg>
+                            </span>
+                            <span class="card-duration-tag">8:30</span>
+                        </div>
+                        <div class="thumb-details">
+                            <span class="details-category">Module 02</span>
+                            <h4>Reward Benefits Deep Dive</h4>
+                            <p>Unlock the secrets of BookMyShow vouchers, Reliance Digital gift codes, and cash back multipliers.</p>
+                        </div>
+                        <div class="glow-effect"></div>
+                    </div>
+                    <!-- Thumbnail 3 -->
+                    <div class="thumbnail-card" data-video-id="xmmxkmVSiq0" tabindex="0" role="button" aria-selected="false">
+                        <div class="thumb-img-wrapper">
+                            <img src="https://img.youtube.com/vi/xmmxkmVSiq0/0.jpg" alt="Video Card 3" loading="lazy">
+                            <span class="play-badge">
+                                <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor">
+                                    <path d="M8 5v14l11-7z"/>
+                                </svg>
+                            </span>
+                            <span class="card-duration-tag">7:15</span>
+                        </div>
+                        <div class="thumb-details">
+                            <span class="details-category">Module 03</span>
+                            <h4>Security & Limit Controls</h4>
+                            <p>Learn how to safely configure domestic online transaction limits and blocks in your iMobile portal.</p>
+                        </div>
+                        <div class="glow-effect"></div>
+                    </div>
+                </div>
+
+                <button class="carousel-control-arrow thumb-next" aria-label="Next video">
+                    <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.5">
+                        <path d="M9 18l6-6-6-6"/>
+                    </svg>
+                </button>
+            </div>
+
+            <!-- Chapter Generator Redesign -->
+            <div class="generator-premium-card" id="chapter-generator-section">
+                <div class="generator-header">
+                    <span class="generator-badge">Developer Tools</span>
+                    <h3>AI Automated Chapters Exporter</h3>
+                    <p>Paste any valid YouTube URL below. Our mock engine will parse the audio transcript, detect transition thresholds, and export integration blocks (JSON configs, HTML lists, and JS seekers).</p>
+                </div>
+
+                <!-- Input block -->
+                <div class="generator-input-field">
+                    <div class="input-icon-prefix">
+                        <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"/>
+                            <polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"/>
+                        </svg>
+                    </div>
+                    <input type="url" id="generator-url" placeholder="Paste YouTube Video URL here (e.g. https://www.youtube.com/watch?v=...)" aria-label="YouTube video URL" />
+                    <button id="generator-btn" class="generator-action-btn">
+                        <span>Generate Chapters</span>
+                    </button>
+                </div>
+
+                <!-- Loading State (Progress Line Animation) -->
+                <div id="generator-loading" class="generator-loading-box" style="display: none;">
+                    <div class="progress-bar-track">
+                        <div class="progress-bar-line"></div>
+                    </div>
+                    <p class="loading-status-text">Simulating transcript ingestion and analyzing topic shifts...</p>
+                </div>
+
+                <!-- Error Alert Box -->
+                <div id="generator-error" class="generator-error-box" style="display: none;">
+                    <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="12" cy="12" r="10"/>
+                        <line x1="12" y1="8" x2="12" y2="12"/>
+                        <line x1="12" y1="16" x2="12.01" y2="16"/>
+                    </svg>
+                    <span class="error-message">Failed to parse URL.</span>
+                </div>
+
+                <!-- Success Screen: Grid Layout -->
+                <div id="generator-success" class="generator-success-grid" style="display: none;">
+                    <!-- Elegant Timeline cards panel -->
+                    <div class="timeline-visual-panel">
+                        <h4>Structure Output Timeline</h4>
+                        <div id="generated-chapters-list" class="timeline-items-flow">
+                            <!-- Injected dynamically -->
+                        </div>
+                    </div>
+
+                    <!-- Collapsible code block panel -->
+                    <div class="code-export-panel">
+                        <!-- Collapsible Block 1: JSON -->
+                        <div class="collapsible-code-block">
+                            <div class="snippet-header" role="button" tabindex="0" aria-expanded="false">
+                                <div class="header-main">
+                                    <span class="chevron-arrow"></span>
+                                    <span class="snippet-title">JSON Configuration</span>
+                                </div>
+                                <div class="header-actions">
+                                    <button class="snippet-action-btn copy-btn" data-clipboard-target="#output-json">Copy</button>
+                                    <button class="snippet-action-btn download-btn" data-download-target="#output-json" data-filename="chapters.json" data-type="application/json">Download</button>
+                                </div>
+                            </div>
+                            <div class="snippet-content">
+                                <pre><code id="output-json" class="language-json"></code></pre>
+                            </div>
+                        </div>
+
+                        <!-- Collapsible Block 2: HTML -->
+                        <div class="collapsible-code-block">
+                            <div class="snippet-header" role="button" tabindex="0" aria-expanded="false">
+                                <div class="header-main">
+                                    <span class="chevron-arrow"></span>
+                                    <span class="snippet-title">HTML List Template</span>
+                                </div>
+                                <div class="header-actions">
+                                    <button class="snippet-action-btn copy-btn" data-clipboard-target="#output-html">Copy</button>
+                                    <button class="snippet-action-btn download-btn" data-download-target="#output-html" data-filename="chapters.html" data-type="text/html">Download</button>
+                                </div>
+                            </div>
+                            <div class="snippet-content">
+                                <pre><code id="output-html" class="language-html"></code></pre>
+                            </div>
+                        </div>
+
+                        <!-- Collapsible Block 3: JS -->
+                        <div class="collapsible-code-block">
+                            <div class="snippet-header" role="button" tabindex="0" aria-expanded="false">
+                                <div class="header-main">
+                                    <span class="chevron-arrow"></span>
+                                    <span class="snippet-title">JavaScript Seeker</span>
+                                </div>
+                                <div class="header-actions">
+                                    <button class="snippet-action-btn copy-btn" data-clipboard-target="#output-js">Copy</button>
+                                    <button class="snippet-action-btn download-btn" data-download-target="#output-js" data-filename="player-seeker.js" data-type="application/javascript">Download</button>
+                                </div>
+                            </div>
+                            <div class="snippet-content">
+                                <pre><code id="output-js" class="language-javascript"></code></pre>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TASK 3: Lead Capture Redesign (Premium Landing Marketing Section) -->
+    <section class="lead-capture-section" id="lead-capture-section">
+        <div class="container">
+            <!-- SaaS Marketing layout grid -->
+            <div class="marketing-grid">
+                <!-- Left: Pitch info, Headline, and Card features (50%) -->
+                <div class="marketing-info-card">
+                    <span class="badge-label orange">Premium Member Perks</span>
+                    <h2 class="marketing-headline">Unlock Instant Activation Vouchers</h2>
+                    <p class="marketing-subtext">Reserving your Flat ₹1,200/- Ixigo and BMS travel benefits takes only seconds. Validate your mobile number during playback to lock in the activation vouchers before your card arrives.</p>
+                    
+                    <ul class="benefits-checklist">
+                        <li>
+                            <span class="checklist-icon">
+                                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="3">
+                                    <polyline points="20 6 9 17 4 12"/>
+                                </svg>
+                            </span>
+                            <div class="checklist-desc">
+                                <strong>Instant Allocation</strong>
+                                <span>Voucher details are SMS-delivered immediately upon submit.</span>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="checklist-icon">
+                                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="3">
+                                    <polyline points="20 6 9 17 4 12"/>
+                                </svg>
+                            </span>
+                            <div class="checklist-desc">
+                                <strong>Zero Upfront Fees</strong>
+                                <span>Unlock premium gifts with zero annual or renewal charges.</span>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="checklist-icon">
+                                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="3">
+                                    <polyline points="20 6 9 17 4 12"/>
+                                </svg>
+                            </span>
+                            <div class="checklist-desc">
+                                <strong>Secure Onboarding</strong>
+                                <span>Direct ICICI Bank validation protects your card registration data.</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Right: embedded player with floating Circular Progress timer (50%) -->
+                <div class="marketing-player-card">
+                    <!-- Circular progress loader overlay -->
+                    <div class="circular-countdown" aria-label="Playback countdown timer">
+                        <svg class="progress-ring" width="56" height="56">
+                            <circle class="progress-ring-bg" stroke="rgba(227, 83, 15, 0.15)" stroke-width="4" fill="transparent" r="24" cx="28" cy="28"/>
+                            <circle class="progress-ring-circle" stroke="#e3530f" stroke-width="4" fill="transparent" r="24" cx="28" cy="28" stroke-dasharray="150.8" stroke-dashoffset="150.8"/>
+                        </svg>
+                        <div class="countdown-text-overlay">
+                            <span class="countdown-sub">Voucher Unlock</span>
+                            <span id="countdown-number" class="countdown-num">6</span>s
+                        </div>
+                    </div>
+
+                    <!-- Embed player ratio frame -->
+                    <div class="player-card-shadow-frame">
+                        <div class="video-ratio-box">
+                            <div id="lead-video-player"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Apple/Stripe Glassmorphism modal overlay -->
+            <div id="lead-form-overlay" class="modal-overlay">
+                <div class="modal-box theme-dark">
+                    <!-- Close button -->
+                    <button id="modal-close-x" class="modal-close-btn" aria-label="Close modal">&times;</button>
+                    
+                    <!-- Inner Form Container -->
+                    <form id="lead-capture-form">
+                        <div class="modal-header-section">
+                            <div class="modal-icon-badge">
+                                <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <rect x="3" y="11" width="18" height="11" rx="2" ry="2"/>
+                                    <path d="M7 11V7a5 5 0 0 1 10 0v4"/>
+                                </svg>
+                            </div>
+                            <h3>Unlock Member Vouchers</h3>
+                            <p>Provide your basic details to lock in your Flat ₹1,200/- activation benefits and resume watching the tutorial.</p>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="lead-name">Full Name <span class="req">*</span></label>
+                            <input type="text" id="lead-name" placeholder="John Doe" autocomplete="name" required />
+                            <span id="error-lead-name" class="error-text" style="display: none;"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="lead-email">Email Address <span class="req">*</span></label>
+                            <input type="email" id="lead-email" placeholder="john@company.com" autocomplete="email" required />
+                            <span id="error-lead-email" class="error-text" style="display: none;"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="lead-phone">Mobile Number <span class="req">*</span></label>
+                            <input type="tel" id="lead-phone" placeholder="9876543210" autocomplete="tel" required />
+                            <span id="error-lead-phone" class="error-text" style="display: none;"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="lead-company">Company Name <span class="opt">(Optional)</span></label>
+                            <input type="text" id="lead-company" placeholder="Acme Corporation" />
+                        </div>
+
+                        <div class="modal-actions">
+                            <button type="button" id="modal-skip-btn" class="btn-text">Maybe Later</button>
+                            <button type="submit" id="modal-submit-btn" class="primary-action-btn">Claim Offer</button>
+                        </div>
+                    </form>
+
+                    <!-- Success Screen Container -->
+                    <div id="lead-success-screen" class="success-screen-wrapper" style="display: none;">
+                        <div class="success-checkmark-holder">
+                            <svg class="checkmark-svg" viewBox="0 0 52 52">
+                                <circle class="checkmark-circle" cx="26" cy="26" r="25" fill="none"/>
+                                <path class="checkmark-check" fill="none" d="M14.1 27.2l7.1 7.2 16.7-16.8"/>
+                            </svg>
+                        </div>
+                        <h3>Voucher Successfully Reserved!</h3>
+                        <p>Thank you for submitting! Your Flat ₹1,200/- activation voucher details have been reserved and sent to your mobile. You may now continue watching the tutorial.</p>
+                        
+                        <div class="success-actions" style="margin-top: 25px;">
+                            <button type="button" id="modal-continue-btn" class="primary-action-btn w-100">Continue Watching</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Load JavaScript Files in Order (Avoids CORS issues on file:// protocol) -->
+    <script src="js/utils.js"></script>
+    <script src="js/carousel.js"></script>
+    <script src="js/storage.js"></script>
+    <script src="js/validation.js"></script>
+    <script src="js/youtube.js"></script>
+    <script src="js/player.js"></script>
+    <script src="js/chapters.js"></script>
+    <script src="js/chapterGenerator.js"></script>
+    <script src="js/leadForm.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
