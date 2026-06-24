@@ -160,6 +160,10 @@
             if (this.countdownNumber) {
                 const secondsLeft = Math.max(Math.ceil(this.config.showAfter - this.accumulatedTime), 0);
                 this.countdownNumber.textContent = secondsLeft;
+                const statusText = document.querySelector('#countdown-status');
+                if (statusText) {
+                    statusText.textContent = `Unlocking in ${secondsLeft}s...`;
+                }
             }
         },
 

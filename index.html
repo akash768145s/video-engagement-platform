@@ -345,13 +345,16 @@
                 <div class="marketing-player-card">
                     <!-- Circular progress loader overlay -->
                     <div class="circular-countdown" aria-label="Playback countdown timer">
-                        <svg class="progress-ring" width="56" height="56">
-                            <circle class="progress-ring-bg" stroke="rgba(227, 83, 15, 0.15)" stroke-width="4" fill="transparent" r="24" cx="28" cy="28"/>
-                            <circle class="progress-ring-circle" stroke="#e3530f" stroke-width="4" fill="transparent" r="24" cx="28" cy="28" stroke-dasharray="150.8" stroke-dashoffset="150.8"/>
-                        </svg>
-                        <div class="countdown-text-overlay">
-                            <span class="countdown-sub">Voucher Unlock</span>
-                            <span id="countdown-number" class="countdown-num">6</span>s
+                        <div class="countdown-ring-wrapper">
+                            <svg class="progress-ring" width="36" height="36">
+                                <circle class="progress-ring-bg" stroke="rgba(255, 255, 255, 0.12)" stroke-width="3" fill="transparent" r="15" cx="18" cy="18"/>
+                                <circle class="progress-ring-circle" stroke="#e3530f" stroke-width="3" fill="transparent" r="15" cx="18" cy="18" stroke-dasharray="94.2" stroke-dashoffset="94.2"/>
+                            </svg>
+                            <span id="countdown-number" class="countdown-num">6</span>
+                        </div>
+                        <div class="countdown-info-text">
+                            <span class="countdown-title">Voucher Unlock</span>
+                            <span id="countdown-status" class="countdown-desc">Unlocking in 6s...</span>
                         </div>
                     </div>
 

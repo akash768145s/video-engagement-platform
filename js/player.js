@@ -53,11 +53,9 @@
                 return;
             }
 
-            // Log local file protocol warning to console
+            // Log local file protocol warning to console but don't block playback
             if (window.location.protocol === 'file:') {
-                console.warn('Open the project using a local HTTP server.');
-                this.showVideoError('YouTube player cannot load under the local file:/// protocol. Please run this project using a local HTTP server.');
-                return;
+                console.warn('[YouTube API] Running under local file:// protocol. Console warnings about postMessage communication are normal and can be ignored.');
             }
 
             window.YouTubeAPIModule.loadAPI(
@@ -176,10 +174,7 @@
                 return;
             }
 
-            if (window.location.protocol === 'file:') {
-                this.showVideoError('YouTube player cannot load under the local file:/// protocol. Please run this project using a local HTTP server.');
-                return;
-            }
+
 
             // Restore the player visibility if it was hidden by previous errors
             const playerEl = document.getElementById(this.elementId);
